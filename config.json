@@ -1,0 +1,11 @@
+{
+  "ownerNumber": "6285218341910",
+  "botName": "EvoBotz",
+  "devName": "LevviCode", 
+  "mode": "self",
+  "prefix": ".",
+  "limits": {
+    "maxMessagesPerGroup": 1000,
+    "crmMaxCodeChars": 50000
+  }
+}
