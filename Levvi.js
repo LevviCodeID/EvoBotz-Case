@@ -406,14 +406,14 @@ module.exports = async (conn, m) => {
                                             header: '',
                                             title: 'Owner',
                                             description: 'Menu Owner',
-                                            id: '.owner',
+                                            id: 'owner',
                                             highlight_label: 'NEW'
                                         },
                                         {
                                             header: '',
                                             title: 'All Menu',
                                             description: 'Semua Fitur',
-                                            id: '.allmenu',
+                                            id: 'allmenu',
                                             highlight_label: 'POPULAR'
                                         }
                                     ]
@@ -701,7 +701,7 @@ case 'allmenu': {
             }
 
             case 'crm': {
-                if (!isOwner(m)) return reply('Khusus owner / creator')
+                if (!isOwner(m)) return reply('Khusus owner');
                 if (!conn.crm?.handleCRM) return reply('CRM belum siap.')
                 await conn.crm.handleCRM(conn, m, args)
                 break
@@ -832,7 +832,7 @@ case 'allmenu': {
 }
            break
            
-           
+        
             default:
                 break;
         }
